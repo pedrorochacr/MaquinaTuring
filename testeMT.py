@@ -21,9 +21,10 @@ def run_maquina_de_turing(palavra):
     listPalavra.append(mt[5]) # insere U
     listTrilhas = [listPalavra]  # Inicializa a fita na primeira trilha com a palavra fornecida
     tamanhotrilha = len(listPalavra)
-    trilhaGenerica = [mt[5]] * tamanhotrilha
+    
 
     for _ in range(mt[0]-1):
+        trilhaGenerica = [mt[5]] * tamanhotrilha
         listTrilhas.append(trilhaGenerica)
     maquinaEstados = mt[7]  # Estado inicial
 
